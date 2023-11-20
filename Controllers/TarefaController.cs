@@ -67,35 +67,17 @@ public class TarefaController : ControllerBase
             }
             if(tarefa.Status == "Não iniciada"){
                 tarefa.Status = "Em andamento";
-                _context.Update(tarefa);
+                _context.SaveChanges();
                 return Ok();
             } else if(tarefa.Status == "Em andamento"){
                 tarefa.Status = "Concluida";
-                _context.Update(tarefa);
+                _context.SaveChanges();
                 return Ok();
             } else{
                 return BadRequest();
             }
             
             
-        }
-        catch (Exception e)
-        {
-            return BadRequest(e.Message);
-        }
-    }
-
-    [HttpGet]
-    [Route("naoconcluido")]
-    public IActionResult NaoConc()
-    {
-        try
-        {
-            List<Tarefa> tarefas = _context.Tarefas.Include(x => x.Categoria).ToList();
-
-        
-
-            return Ok(tarefas);
         }
         catch (Exception e)
         {
