@@ -54,6 +54,7 @@ public class TarefaController : ControllerBase
         }
     }
 
+    
     [HttpPatch]
     [Route("alterar/{id}")]
     public IActionResult Alterar([FromRoute]int id)
@@ -74,7 +75,7 @@ public class TarefaController : ControllerBase
                 _context.SaveChanges();
                 return Ok();
             } else{
-                return BadRequest();
+                return Ok();
             }
             
             

@@ -37,19 +37,19 @@ namespace API.Migrations
                         new
                         {
                             CategoriaId = 1,
-                            CriadoEm = new DateTime(2023, 11, 21, 18, 40, 41, 398, DateTimeKind.Local).AddTicks(7222),
+                            CriadoEm = new DateTime(2023, 11, 21, 20, 36, 31, 517, DateTimeKind.Local).AddTicks(9591),
                             Nome = "Trabalho"
                         },
                         new
                         {
                             CategoriaId = 2,
-                            CriadoEm = new DateTime(2023, 11, 22, 18, 40, 41, 398, DateTimeKind.Local).AddTicks(7226),
+                            CriadoEm = new DateTime(2023, 11, 22, 20, 36, 31, 517, DateTimeKind.Local).AddTicks(9595),
                             Nome = "Estudos"
                         },
                         new
                         {
                             CategoriaId = 3,
-                            CriadoEm = new DateTime(2023, 11, 23, 18, 40, 41, 398, DateTimeKind.Local).AddTicks(7227),
+                            CriadoEm = new DateTime(2023, 11, 23, 20, 36, 31, 517, DateTimeKind.Local).AddTicks(9596),
                             Nome = "Lazer"
                         });
                 });
@@ -86,24 +86,27 @@ namespace API.Migrations
                         {
                             TarefaId = 1,
                             CategoriaId = 1,
-                            CriadoEm = new DateTime(2023, 11, 27, 18, 40, 41, 398, DateTimeKind.Local).AddTicks(7290),
+                            CriadoEm = new DateTime(2023, 11, 27, 20, 36, 31, 517, DateTimeKind.Local).AddTicks(9662),
                             Descricao = "Terminar relatório para reunião",
+                            Status = "Não iniciada",
                             Titulo = "Concluir relatório"
                         },
                         new
                         {
                             TarefaId = 2,
                             CategoriaId = 2,
-                            CriadoEm = new DateTime(2023, 11, 23, 18, 40, 41, 398, DateTimeKind.Local).AddTicks(7292),
+                            CriadoEm = new DateTime(2023, 11, 23, 20, 36, 31, 517, DateTimeKind.Local).AddTicks(9663),
                             Descricao = "Preparar-se para a aula de Angular",
+                            Status = "Não iniciada",
                             Titulo = "Estudar Angular"
                         },
                         new
                         {
                             TarefaId = 3,
                             CategoriaId = 3,
-                            CriadoEm = new DateTime(2023, 12, 4, 18, 40, 41, 398, DateTimeKind.Local).AddTicks(7293),
+                            CriadoEm = new DateTime(2023, 12, 4, 20, 36, 31, 517, DateTimeKind.Local).AddTicks(9665),
                             Descricao = "Dar um passeio relaxante no parque",
+                            Status = "Não iniciada",
                             Titulo = "Passeio no parque"
                         });
                 });
