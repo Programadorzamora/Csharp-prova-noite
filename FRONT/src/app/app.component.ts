@@ -5,7 +5,13 @@ import { Component } from '@angular/core';
   template: `
 
     <a routerLink="/pages/tarefa/listar">lista</a><br>
-
+    <a routerLink="/pages/tarefa/listar-tarefas">tarefas</a><br>
+    <a mat-list-item routerLink="/pages/tarefa/listar">
+        <div class="item">
+          
+          <span> Listar Produtos </span>
+        </div>
+      </a>
 
 
   `,

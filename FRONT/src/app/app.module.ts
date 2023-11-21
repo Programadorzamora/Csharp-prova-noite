@@ -4,11 +4,13 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ListarComponent } from './pages/tarefa/listar/listar.component';
+import { ListarTarefasComponent } from './pages/tarefa/listar-tarefas/listar-tarefas.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ListarComponent
+    ListarComponent,
+    ListarTarefasComponent
   ],
   imports: [
     BrowserModule,

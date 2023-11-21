@@ -1,8 +1,8 @@
 import { Categoria } from "./categoria.model";
 
 export interface Tarefa {
-    TarefaId?: number;
-    Titulo: string;
+  TarefaId: number;
+  Titulo: string;
   Descricao: string;
   criadoEm?: string;
   Categoria: Categoria;

@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { Tarefa } from "src/app/Models/tarefa.model";
 import { Categoria } from './../../../Models/categoria.model';
 import { HttpClient } from "@angular/common/http";
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-listar',
@@ -22,7 +23,7 @@ export class ListarComponent {
   tarefas: Tarefa[] = [];
 
   constructor(
-    private client: HttpClient
+    private client: HttpClient,private router: Router
   ) {
     //Um problema de CORS ao fazer uma requisição para a
     //nossa API
